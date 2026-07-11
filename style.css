@@ -1,0 +1,99 @@
+:root {
+  --ink: #111111;
+  --paper: #fafaf8;
+  --red: #e60012;
+  --gray: #555555;
+  --line: #e2e2de;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Georgia, "Times New Roman", "Hiragino Mincho ProN", serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.7;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.logo {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  letter-spacing: 0.02em;
+  background: var(--ink);
+  color: #fff;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+.logo .dot { color: var(--red); }
+.site-name {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+nav { margin-left: auto; display: flex; gap: 22px; flex-wrap: wrap; }
+nav a {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+  color: var(--gray);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+nav a:hover, nav a.active { color: var(--red); }
+.hero {
+  position: relative;
+  background: #1c2a20;
+  color: #fff;
+  padding: 90px 24px;
+  text-align: left;
+}
+.hero blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  max-width: 760px;
+  margin: 0 auto;
+}
+main { max-width: 880px; margin: 0 auto; padding: 48px 24px 80px; }
+h1 { font-size: 2.2rem; margin-bottom: 8px; font-family: "Helvetica Neue", Arial, sans-serif; }
+h2 { font-size: 1.3rem; margin: 40px 0 12px; font-family: "Helvetica Neue", Arial, sans-serif; }
+.lede { font-style: italic; color: var(--gray); margin-bottom: 24px; }
+p { margin-bottom: 16px; }
+ul { margin: 0 0 16px 24px; }
+.notice {
+  border-left: 3px solid var(--red);
+  background: #fff;
+  padding: 14px 18px;
+  margin: 24px 0;
+  font-size: 0.95rem;
+}
+.embed-wrap { margin: 28px 0; background: #fff; border: 1px solid var(--line); }
+.embed-wrap iframe { display: block; width: 100%; height: 720px; border: 0; }
+.placeholder {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--gray);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+}
+footer {
+  border-top: 1px solid var(--line);
+  padding: 28px 24px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+footer a { color: var(--gray); }
+@media (max-width: 640px) {
+  .hero { padding: 60px 20px; }
+  .hero blockquote { font-size: 1.15rem; }
+  h1 { font-size: 1.6rem; }
+}
