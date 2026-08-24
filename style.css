@@ -253,3 +253,33 @@ nav a.lang:hover { background: var(--red); color: #fff; border-bottom-color: tra
   .hero { min-height: 64vh; padding: 72px 20px; }
   main { padding: 48px 18px 64px; }
 }
+
+/* ===== Mobile navigation (hamburger) ===== */
+.nav-toggle { display: none; }
+.nav-burger { display: none; }
+@media (max-width: 1024px) {
+  header { flex-wrap: wrap; }
+  .nav-burger {
+    display: block;
+    margin-left: auto;
+    font-size: 1.7rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--ink);
+    user-select: none;
+    padding: 2px 8px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+  nav {
+    display: none;
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 4px 6px;
+  }
+  nav a { font-size: 0.95rem; padding: 6px 0; }
+  .nav-toggle:checked ~ nav { display: flex; }
+  nav a.lang { align-self: flex-start; }
+}
