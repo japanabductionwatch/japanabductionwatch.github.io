@@ -247,6 +247,26 @@ nav a.lang:hover { background: var(--red); color: #fff; border-bottom-color: tra
 .sources-note { text-align: center; font-size: 0.78rem; color: var(--gray); margin-top: 20px; }
 .sources-note a { color: var(--gray); }
 
+/* News article source links → tappable buttons */
+article .sources-note a {
+  display: inline-block;
+  margin: 4px 4px 0 4px;
+  padding: 8px 18px;
+  background: #f4f2f2;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--red);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background .2s, color .2s, border-color .2s;
+}
+article .sources-note a:hover {
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
+}
+
 @media (max-width: 640px) {
   header { padding: 12px 18px; }
   nav { gap: 14px; }
